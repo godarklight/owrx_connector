@@ -41,6 +41,14 @@ Description: OpenWebRX connector for rtl_tcp remote devices
  Provides connector functionality for (potentially) remote SDR devices that are
  available on the network using the rtl_tcp protocol.
 
+Package: miri-tcp-connector
+Architecture: any
+Depends: libowrx-connector (=${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Conflicts: owrx-connector (<< 0.4)
+Description: OpenWebRX connector for miri_tcp remote devices
+ Provides connector functionality for (potentially) remote SDR devices that are
+ available on the network using the miri_tcp protocol.
+
 Package: owrx-connector
 Architecture: any
 Depends: rtl-connector (=${binary:Version}), rtl-tcp-connector (=${binary:Version}), soapy-connector (=${binary:Version}), ${misc:Depends}
