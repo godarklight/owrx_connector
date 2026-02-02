@@ -34,3 +34,7 @@ endif()
 add_executable(rtl_tcp_connector rtl_tcp_connector.cpp)
 target_link_libraries(rtl_tcp_connector owrx-connector ${LIBS})
 install(TARGETS rtl_tcp_connector DESTINATION ${CMAKE_INSTALL_BINDIR})
+
+add_executable(gnuradio_tcp_connector gnuradio_tcp_connector.cpp)
+target_link_libraries(gnuradio_tcp_connector owrx-connector ${LIBS})
+install(TARGETS gnuradio_tcp_connector DESTINATION ${CMAKE_INSTALL_BINDIR})
